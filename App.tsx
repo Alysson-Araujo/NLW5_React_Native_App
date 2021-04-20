@@ -1,21 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Welcome } from './src/pages/Welcome';
 
+
+
+/* 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex:1,justifyContent:'center', alignItems:'center'}}>
+      <Text>
+        NLW#5
+      </Text>
     </View>
-  );
+  )
 }
+ */
+/**
+ * 
+ * o fragmento <> </> serve para empacotar uma série de  elementos e devolver em um só pacote e 
+ * tem 0 impácto visual Ou usar no lugar dele o <View> 
+ */
 
-const styles = StyleSheet.create({
+
+// é o mesmo que fazer o que está abaixo
+export default function App() {
+  return (
+    <Welcome />
+  )
+}
+/* 
+const style = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    flex:1,
+    justifyContent:'center',
+    alignItems: 'center'
+  }
+}) */
